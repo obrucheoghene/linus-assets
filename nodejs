@@ -1,0 +1,10 @@
+# Install curl if not already installed
+sudo apt install curl
+
+# Download the NodeSource setup script using curl
+curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+
+sudo apt install -y nodejs
+
+node -v
+npm -v
