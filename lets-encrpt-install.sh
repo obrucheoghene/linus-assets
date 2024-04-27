@@ -17,6 +17,14 @@ sudo ln -s /snap/bin/certbot /usr/bin/certbot
 # 6 Create SSL certs for all domains and configure redirects in the web server:
 sudo certbot --nginx -d rtc.obrucheoghene.tech -d anotherdomain.com
 
+
+
+
+Set Up Auto-Renewal: Certbot provides a cron job that runs twice daily and will automatically renew any certificates that are near expiry. You can verify the auto-renewal setup by running:
+bash
+Copy code
+sudo certbot renew --dry-run
+
 # https://www.inmotionhosting.com/support/website/ssl/lets-encrypt-ssl-ubuntu-with-certbot/
 
 # 6 Configure Your Web Server:
