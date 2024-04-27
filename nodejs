@@ -8,3 +8,13 @@ sudo apt install -y nodejs
 
 node -v
 npm -v
+
+
+# install latest node with nvm
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+nvm install 20
+node -v
+npm -v
+nvm use 20
+nvm alias default 20
+
